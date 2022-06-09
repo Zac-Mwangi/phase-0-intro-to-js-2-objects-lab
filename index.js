@@ -23,7 +23,7 @@ function deleteFromEmployeeByKey(obj, key){
 
     // need to do spread operator
     const myNewObject = { ...obj };
-    delete myNewObject.key
+    delete myNewObject[key]
 
     return myNewObject;
 }
